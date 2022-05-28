@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  
+export const Image = styled.img`
+    border-radius: 15px;
+    height: 500px;
 `

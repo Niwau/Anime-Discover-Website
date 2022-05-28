@@ -1,8 +1,13 @@
+import React from 'react';
 import Header from './components/Header/Header'
-import './App.css'
-import Search from './components/Header/Search/Input'
+import Search from './components/Header/Search/Search'
 import Banner from './components/Banner/Banner'
 import Cape from './components/Banner/Cape/Cape'
+import { RandomAnimeContext }from './contexts/RandomAnimeContext'
+import { useFetchRandomAnime } from './hooks/useFetchRandomAnime';
+
+import './App.css'
+import CapeInfo from './components/Banner/CapeInfo/CapeInfo';
 
 export default function App() {
 
@@ -11,9 +16,12 @@ export default function App() {
       <Header>
         <Search/>
       </Header>
-
+  
       <Banner>
-        <Cape src="test"/>
+        <RandomAnimeContext.Provider value={useFetchRandomAnime()}>
+          <Cape/>
+          <CapeInfo/>
+        </RandomAnimeContext.Provider>
       </Banner>
     </div>
   )
