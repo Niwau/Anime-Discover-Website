@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 550px;
+    padding: 25px var(--padding-right-left);
     background: var(--blue);
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 `

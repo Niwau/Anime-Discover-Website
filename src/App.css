@@ -15,3 +15,7 @@ html {
   box-sizing: border-box;
   font-family: Poppins;
 }
+
+body {
+  background-color: var(--black);
+}

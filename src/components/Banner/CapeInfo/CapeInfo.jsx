@@ -11,7 +11,7 @@ export default function CapeInfo() {
             <h1>{isLoaded ? randomAnime.title : "Carregando..."}</h1>
             <h2>{isLoaded ? randomAnime.title_english : randomAnime.title}</h2>
             <p>{isLoaded ? randomAnime.synopsis : "Carregando..."}</p>
-            <button>Detalhes</button>
+            <div><button>Detalhes</button></div>
         </Container>
   )
 }
