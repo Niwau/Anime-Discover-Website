@@ -1,0 +1,17 @@
+:root {
+  --black: #0D0D0D;
+  --blue: #0074B6;
+  --white: #FFFFFF;
+  --padding-right-left: 30px;
+}
+
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
