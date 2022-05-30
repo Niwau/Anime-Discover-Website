@@ -4,8 +4,9 @@ export const Container = styled.div`
 
     color: var(--white);
 
-    min-width: 550px;
-    flex: 1 1;
+    width: 630px;
+    flex: 1;
+
 
     display: flex;
     flex-direction: column;

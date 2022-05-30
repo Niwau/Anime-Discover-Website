@@ -1,5 +1,5 @@
 import React from 'react'
-import { RandomAnimeContext } from '../../../contexts/RandomAnimeContext';
+import { RandomAnimeContext } from '../contexts/RandomAnimeContext';
 import { Image } from './Cape.styled';
 
 export default function Cape() {
