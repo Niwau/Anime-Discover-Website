@@ -8,10 +8,9 @@ export const useFetchLastEpisodes = () => {
     useEffect(() => {
         fetch("https://api.jikan.moe/v4/watch/episodes")
         .then( res => res.json() ) 
-        .then( json => setLastEpisode(json) )
+        .then( json => setLastEpisode(json.data.splice(0,8)) )
         .then( () => setIsLoaded(true) )
     }, [])
 
-    return [lastEpisode, isLoaded]
-
+    return [lastEpisode, isLoaded];
 }

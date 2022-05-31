@@ -8,9 +8,9 @@ export default function CapeInfo() {
     
     return (
         <Container>
-            <h1>{isLoaded ? randomAnime.title : "Carregando..."}</h1>
+            <h1>{isLoaded && randomAnime.title}</h1>
             <h2>{isLoaded ? randomAnime.title_english : randomAnime.title}</h2>
-            <p>{isLoaded ? randomAnime.synopsis : "Carregando..."}</p>
+            <p>{isLoaded && randomAnime.synopsis}</p>
             <div><button>Detalhes</button></div>
         </Container>
   )

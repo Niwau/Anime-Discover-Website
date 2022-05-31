@@ -1,8 +1,13 @@
-import React from "react";
+import { Container, Title } from "./Row.styled";
+
 
 export const Row = (props) => (
-    <div>
-        <h1>{props.title}</h1>
-        {props.children}
-    </div>
+
+    <>
+        <Title>{props.title}</Title>
+        <Container>
+            {props.children}
+        </Container>
+    </>
+
 )
