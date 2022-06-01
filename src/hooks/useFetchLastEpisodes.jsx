@@ -3,7 +3,7 @@ import {useState, useEffect} from "react";
 export const useFetchLastEpisodes = () => {
 
     const [ lastEpisode, setLastEpisode ] = useState([]);
-    const [ isLoaded, setIsLoaded ] = useState(false);
+    const [ isLoadedLastEpisode, setIsLoaded ] = useState(false);
 
     useEffect(() => {
         fetch("https://api.jikan.moe/v4/watch/episodes")
@@ -12,5 +12,5 @@ export const useFetchLastEpisodes = () => {
         .then( () => setIsLoaded(true) )
     }, [])
 
-    return [lastEpisode, isLoaded];
+    return [lastEpisode, isLoadedLastEpisode];
 }
