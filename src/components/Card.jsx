@@ -11,6 +11,7 @@ export const Card = (props) => (
 const Container = styled.div`
 
     width: 180px;
+    transition: .2s ease;
 
     h1 {
         font-weight: 400;
@@ -24,5 +25,10 @@ const Container = styled.div`
     img {
         width: 100%;
         border-radius: 15px;
+    }
+
+    :hover {
+      transform: scale(1.05);
+      cursor: pointer;
     }
 `
